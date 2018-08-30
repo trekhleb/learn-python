@@ -1,6 +1,7 @@
 """Function Definition
 
 @see: https://docs.python.org/3/tutorial/controlflow.html#defining-functions
+@see: https://www.thecodeship.com/patterns/guide-to-python-function-decorators/
 
 The keyword def introduces a function definition. It must be followed by the function name and the
 parenthesized list of formal parameters. The statements that form the body of the function start at
@@ -58,3 +59,65 @@ def test_function_definition():
     # serves as a general renaming mechanism
     fibonacci_function_clone = fibonacci_function_example
     assert fibonacci_function_clone(300) == [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233]
+
+    # In Python, functions are first class citizens, they are objects and that means we can do a
+    # lot of useful stuff with them.
+
+    # Assign functions to variables.
+
+    def greet(name):
+        return 'Hello, ' + name
+
+    greet_someone = greet
+
+    assert greet_someone('John') == 'Hello, John'
+
+    # Define functions inside other functions.
+
+    def greet_again(name):
+        def get_message():
+            return 'Hello, '
+
+        result = get_message() + name
+        return result
+
+    assert greet_again('John') == 'Hello, John'
+
+    # Functions can be passed as parameters to other functions.
+
+    def greet_one_more(name):
+        return 'Hello, ' + name
+
+    def call_func(func):
+        other_name = 'John'
+        return func(other_name)
+
+    assert call_func(greet_one_more) == 'Hello, John'
+
+    # Functions can return other functions. In other words, functions generating other functions.
+
+    def compose_greet_func():
+        def get_message():
+            return 'Hello there!'
+
+        return get_message
+
+    greet_function = compose_greet_func()
+    assert greet_function() == 'Hello there!'
+
+    # Inner functions have access to the enclosing scope.
+
+    # More commonly known as a closure. A very powerful pattern that we will come across while
+    # building decorators. Another thing to note, Python only allows read access to the outer
+    # scope and not assignment. Notice how we modified the example above to read a "name" argument
+    # from the enclosing scope of the inner function and return the new function.
+
+    def compose_greet_func_with_closure(name):
+        def get_message():
+            return 'Hello there, ' + name + '!'
+
+        return get_message
+
+    greet_with_closure = compose_greet_func_with_closure('John')
+
+    assert greet_with_closure() == 'Hello there, John!'
