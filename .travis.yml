@@ -10,3 +10,7 @@ install:
 script:
   - pylint ./src
   - pytest
+
+# Turn email notifications off.
+notifications:
+  email: false
