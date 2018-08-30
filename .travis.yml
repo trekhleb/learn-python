@@ -1,0 +1,12 @@
+language: python
+python:
+  - "3.7"
+
+# Install dependencies.
+install:
+  - pip install -r requirements.txt
+
+# Run linting and tests.
+script:
+  - pylint ./src
+  - pytest
