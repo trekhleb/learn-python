@@ -92,6 +92,7 @@ written correctly.
     - [Lambda Expressions](src/functions/test_lambda_expressions.py) (`lambda` statement)
     - [Documentation Strings](src/functions/test_function_documentation_string.py)
     - [Function Annotations](src/functions/test_function_annotations.py)
+    - [Function Decorators](src/functions/test_function_decorators.py)
 6. **Classes**
     - [Class Definition](src/classes/test_class_definition.py) (`class` statement)
     - [Class Objects](src/classes/test_class_objects.py)
