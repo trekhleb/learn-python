@@ -2,6 +2,7 @@
 
 @see: https://docs.python.org/3/tutorial/introduction.html
 @see: https://www.w3schools.com/python/python_strings.asp
+@see: https://www.w3schools.com/python/python_ref_string.asp
 
 Besides numbers, Python can also manipulate strings, which can be
 expressed in several ways. They can be enclosed in single quotes ('...')
@@ -165,6 +166,37 @@ def test_string_methods():
 
     # The split() method splits the string into substrings if it finds instances of the separator.
     assert hello_world_string.split(',') == ['Hello', ' World!']
+
+    # Converts the first character to upper case
+    assert 'low letter at the beginning'.capitalize() == 'Low letter at the beginning'
+
+    # Returns the number of times a specified value occurs in a string.
+    assert 'low letter at the beginning'.count('t') == 4
+
+    # Searches the string for a specified value and returns the position of where it was found.
+    assert 'Hello, welcome to my world'.find('welcome') == 7
+
+    # Converts the first character of each word to upper case
+    assert 'Welcome to my world'.title() == 'Welcome To My World'
+
+    # Returns a string where a specified value is replaced with a specified value.
+    assert 'I like bananas'.replace('bananas', 'apples') == 'I like apples'
+
+    # Joins the elements of an iterable to the end of the string.
+    my_tuple = ('John', 'Peter', 'Vicky')
+    assert ', '.join(my_tuple) == 'John, Peter, Vicky'
+
+    # Returns True if all characters in the string are upper case.
+    assert 'ABC'.isupper()
+    assert not 'AbC'.isupper()
+
+    # Check if all the characters in the text are letters.
+    assert 'CompanyX'.isalpha()
+    assert not 'Company 23'.isalpha()
+
+    # Returns True if all characters in the string are decimals.
+    assert '1234'.isdecimal()
+    assert not 'a21453'.isdecimal()
 
 
 def test_string_formatting():
