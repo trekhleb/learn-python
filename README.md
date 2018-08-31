@@ -85,6 +85,7 @@ written correctly.
     - [The `continue` statement](src/control_flow/test_break.py)
 5. **Functions**
     - [Function Definition](src/functions/test_function_definition.py) (`def` and `return` statements)
+    - [Scopes of Variables Inside Functions](src/functions/test_function_scopes.py) (`global` and `nonlocal` statements)
     - [Default Argument Values](src/functions/test_function_default_arguments.py)
     - [Keyword Arguments](src/functions/test_function_keyword_arguments.py)
     - [Arbitrary Argument Lists](src/functions/test_function_arbitrary_arguments.py)
