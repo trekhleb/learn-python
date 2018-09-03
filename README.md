@@ -82,7 +82,7 @@ written correctly.
     - [The `while` statement](src/control_flow/test_while.py)
     - [The `try` statements](src/control_flow/test_try.py)
     - [The `break` statement](src/control_flow/test_break.py)
-    - [The `continue` statement](src/control_flow/test_break.py)
+    - [The `continue` statement](src/control_flow/test_continue.py)
 5. **Functions**
     - [Function Definition](src/functions/test_function_definition.py) (`def` and `return` statements)
     - [Scopes of Variables Inside Functions](src/functions/test_function_scopes.py) (`global` and `nonlocal` statements)
