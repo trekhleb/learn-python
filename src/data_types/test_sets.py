@@ -54,7 +54,7 @@ def test_set_methods():
     assert second_char_set == {'a', 'l', 'c', 'z', 'm'}  # unique letters in second word
 
     # Letters in first word but not in second.
-    assert first_char_set - second_char_set == {'r', 'd', 'b'}
+    assert first_char_set - second_char_set == {'r', 'b', 'd'}
 
     # Letters in first word or second word or both.
     assert first_char_set | second_char_set == {'a', 'c', 'r', 'd', 'b', 'm', 'z', 'l'}
