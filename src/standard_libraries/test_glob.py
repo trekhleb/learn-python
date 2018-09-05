@@ -11,7 +11,7 @@ import glob
 def test_glob():
     """File Wildcards."""
 
-    assert glob.glob('src/standard_libraries/glob_files/*.txt') == [
+    assert sorted(glob.glob('src/standard_libraries/glob_files/*.txt')) == sorted([
         'src/standard_libraries/glob_files/first_file.txt',
         'src/standard_libraries/glob_files/second_file.txt'
-    ]
+    ])
