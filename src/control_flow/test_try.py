@@ -21,8 +21,8 @@ def test_try():
     # pylint: disable=bare-except
     try:
         # pylint: disable=undefined-variable
-        print(not_existing_variable)
-    except:
+        print(not_existing_variable)  # noqa: F821
+    except Exception:
         exception_has_been_caught = True
 
     assert exception_has_been_caught
@@ -37,7 +37,7 @@ def test_try():
         print(not_existing_variable)
     except NameError:
         exception_message = 'Variable is not defined'
-    except:
+    except Exception:
         exception_message = 'Something else went wrong'
 
     assert exception_message == 'Variable is not defined'
@@ -47,7 +47,7 @@ def test_try():
     message = ''
     try:
         message += 'Success.'
-    except:
+    except Exception:
         message += 'Something went wrong.'
     else:
         message += 'Nothing went wrong.'
@@ -59,8 +59,8 @@ def test_try():
     message = ''
     try:
         # pylint: disable=undefined-variable
-        print(not_existing_variable)
-    except:
+        print(not_existing_variable)  # noqa: F821
+    except Exception:
         message += 'Something went wrong.'
     finally:
         message += 'The "try except" is finished.'
