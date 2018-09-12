@@ -76,3 +76,12 @@ def test_tuples():
     # right-hand side. Sequence unpacking requires that there are as many variables on the left
     # side of the equals sign as there are elements in the sequence. Note that multiple assignment
     # is really just a combination of tuple packing and sequence unpacking.
+    
+    # Swapping using tuples. Data can be swapped from one variable to another in python using tuples. 
+    # This eliminates the need to use a 'temp' variable.
+   
+    first_number = 123
+    second_number = 456
+    first_number, second_number = second_number, first_number
+    
+    
