@@ -61,7 +61,7 @@ def test_tuples():
     # pylint: disable=trailing-comma-tuple
     singleton_tuple = 'hello',  # <-- note trailing comma
     assert len(singleton_tuple) == 1
-    assert singleton_tuple == ('hello', )
+    assert singleton_tuple == ('hello',)
 
     # The following example is called tuple packing:
     packed_tuple = 12345, 54321, 'hello!'
@@ -76,7 +76,7 @@ def test_tuples():
     # right-hand side. Sequence unpacking requires that there are as many variables on the left
     # side of the equals sign as there are elements in the sequence. Note that multiple assignment
     # is really just a combination of tuple packing and sequence unpacking.
-    
+
     # Swapping using tuples.
     first_number = 123
     second_number = 456
