@@ -174,7 +174,9 @@ pytest ./path/to/the/test_file.py
 
 ## Linting the Code
 
-Linting is done using [pylint](http://pylint.pycqa.org/) library.
+Linting is done using [pylint](http://pylint.pycqa.org/) and [flake8](http://flake8.pycqa.org/en/latest/) libraries.
+
+### PyLint
 
 To check if the code is written with respect
 to [PEP 8](https://www.python.org/dev/peps/pep-0008/) style guide please run:
@@ -189,3 +191,22 @@ specific error by running:
 ```bash
 pylint --help-msg=missing-docstring
 ```
+
+[More about PyLint](http://pylint.pycqa.org/)
+
+### Flake8
+
+To check if the code is written with respect
+to [PEP 8](https://www.python.org/dev/peps/pep-0008/) style guide please run:
+
+```bash
+flake8 ./src
+```
+
+Or if you want to have more detailed output you may run:
+
+```bash
+flake8 ./src --statistics --show-source --count
+```
+
+[More about Flake8](http://flake8.pycqa.org/en/latest/)
