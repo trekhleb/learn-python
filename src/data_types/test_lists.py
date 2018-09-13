@@ -195,7 +195,7 @@ def test_del_statement():
     with pytest.raises(Exception):
         # Referencing the name a hereafter is an error (at least until another
         # value is assigned to it).
-        assert numbers == []
+        assert numbers == []  # noqa: F821
 
 
 def test_list_comprehensions():

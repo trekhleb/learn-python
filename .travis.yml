@@ -9,6 +9,7 @@ install:
 # Run linting and tests.
 script:
   - pylint ./src
+  - flake8 ./src --statistics --count
   - pytest
 
 # Turn email notifications off.
