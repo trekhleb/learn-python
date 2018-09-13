@@ -18,6 +18,7 @@ def test_try():
 
     # The try block will generate an error, because x is not defined:
     exception_has_been_caught = False
+
     try:
         # pylint: disable=undefined-variable
         print(not_existing_variable)
@@ -41,6 +42,7 @@ def test_try():
     # You can use the else keyword to define a block of code to be executed
     # if no errors were raised.
     message = ''
+    # pylint: disable=broad-except
     try:
         message += 'Success.'
     except NameError:
@@ -54,8 +56,8 @@ def test_try():
     # error or not.
     message = ''
     try:
-        # pylint: disable=undefined-variable
-        print(not_existing_variable)
+        # pylint: undefined-variable
+        print(not_existing_variable)  # noqa: F821
     except NameError:
         message += 'Something went wrong.'
     finally:
