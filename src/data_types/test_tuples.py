@@ -78,8 +78,11 @@ def test_tuples():
     # is really just a combination of tuple packing and sequence unpacking.
 
     # Swapping using tuples.
+    # Data can be swapped from one variable to another in python using
+    # tuples. This eliminates the need to use a 'temp' variable.
     first_number = 123
     second_number = 456
     first_number, second_number = second_number, first_number
-    # Data can be swapped from one variable to another in python using
-    # tuples. This eliminates the need to use a 'temp' variable.
+
+    assert first_number == 456
+    assert second_number == 123
