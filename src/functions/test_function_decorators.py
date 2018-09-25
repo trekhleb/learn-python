@@ -17,7 +17,7 @@ def test_function_decorators():
     # above together, we can build a decorator. In this example let's consider a function that
     # wraps the string output of another function by p tags.
 
-    # This is the function that we цфте to decorate.
+    # This is the function that we want to decorate.
     def greeting(name):
         return "Hello, {0}!".format(name)
 
