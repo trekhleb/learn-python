@@ -1,6 +1,9 @@
 """Inheritance
 
 @see: https://docs.python.org/3/tutorial/classes.html#inheritance
+
+Inheritance is one of the principles of object-oriented programming. Since classes may share a lot
+of the same code, inheritance allows a derived class to reuse the same code and modify accordingly
 """
 
 

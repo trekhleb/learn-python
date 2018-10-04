@@ -1,6 +1,8 @@
 """Math.
 
 @see: https://docs.python.org/3/tutorial/stdlib.html#mathematics
+
+Math module is useful as many math functions are already implemented and optimized.
 """
 
 import math

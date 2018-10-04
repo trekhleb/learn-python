@@ -1,6 +1,9 @@
 """Class Definition Syntax.
 
 @see: https://docs.python.org/3/tutorial/classes.html#method-objects
+
+Classes can have two types of attribute references: data or methods. Class methods are called
+by [variable_name].[method_name]([parameters]) as opposed to class data which lacks the ().
 """
 
 
