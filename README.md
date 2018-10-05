@@ -47,7 +47,7 @@ def test_list_type():
 
 So normally you might want to do the following:
 
-- [Find the topic](#table-of-contents) you're want to learn or recap.
+- [Find the topic](#table-of-contents) you want to learn or recap.
 - Read comments and/or documentation that is linked in each script's docstring (as in example above). 
 - Look at code examples and assertions to see usage examples and expected output.
 - Change code or add new assertions to see how things work.
