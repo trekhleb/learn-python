@@ -14,6 +14,23 @@ have access to in a script executed at the top level and in calculator mode).
 A module is a file containing Python definitions and statements. The file name is the module name
 with the suffix .py appended. Within a module, the module’s name (as a string) is available as the
 value of the global variable __name__.
+
+When the interpreter executes the import statement, it searches for module in a list of
+directories assembled from the following sources:
+
+- The directory from which the input script was run or the current directory if the interpreter is
+being run interactively
+- The list of directories contained in the PYTHONPATH environment variable, if it is set. (The
+format for PYTHONPATH is OS-dependent but should mimic the PATH environment variable.)
+- An installation-dependent list of directories configured at the time Python is installed
+
+The resulting search path is accessible in the Python variable sys.path, which is obtained from a
+module named sys:
+
+>>> import sys
+>>> sys.path
+
+@see: https://realpython.com/python-modules-packages/
 """
 
 # This does not enter the names of the functions defined in fibonacci_module directly in the
