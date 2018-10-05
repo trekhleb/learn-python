@@ -1,6 +1,10 @@
 """Reading and Writing Files
 
 @see: https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
+
+The process of reading and writing to a file is like finding a book and opening a book.
+First, the file is located, opened to the first page, then reading/writing begins until it reaches
+the end of the file.
 """
 
 

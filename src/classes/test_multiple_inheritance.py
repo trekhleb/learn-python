@@ -1,6 +1,9 @@
 """Multiple Inheritance
 
 @see: https://docs.python.org/3/tutorial/classes.html#multiple-inheritance
+
+Some classes may derive from multiple classes. This means that the derived class would have
+its attributes, along with the attributes of all the classes that it was derived from.
 """
 
 

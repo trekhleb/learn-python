@@ -1,6 +1,9 @@
 """Methods of File Objects
 
 @see: https://docs.python.org/3/tutorial/inputoutput.html#methods-of-file-objects
+
+Reading from a file does not always have to be sequential. There are methods to look for
+specific locations in the file, much like flipping to a page in a book.
 """
 
 

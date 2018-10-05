@@ -1,6 +1,9 @@
 """Class Definition Syntax.
 
 @see: https://docs.python.org/3/tutorial/classes.html#class-objects
+
+After defining the class attributes to a class, the class object can be created by assigning the
+object to a variable. The created object would have instance attributes associated with it.
 """
 
 
