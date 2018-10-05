@@ -110,7 +110,7 @@ written correctly.
     - [Raising Exceptions](src/exceptions/test_raise_exceptions.py) (`raise` statement) 
 9. **Files**
     - [Reading and Writing](src/files/test_file_reading.py) (`with` statement)
-    - [Methods of File Objects](src/files/test_file_methdos.py)
+    - [Methods of File Objects](src/files/test_file_methods.py)
 10. **Additions**
     - [The `pass` statement](src/additions/test_pass.py)
     - [Generators](src/additions/test_generators.py) (`yield` statement)
