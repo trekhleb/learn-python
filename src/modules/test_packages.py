@@ -13,13 +13,24 @@ this is done to prevent directories with a common name, such as string, from uni
 valid modules that occur later on the module search path. In the simplest case, __init__.py can
 just be an empty file, but it can also execute initialization code for the package or set the
 __all__ variable, described later.
-"""
 
-# The __init__.py files are required to make Python treat the directories as containing packages;
-# this is done to prevent directories with a common name, such as string, from unintentionally
-# hiding valid modules that occur later on the module search path. In the simplest case,
-# __init__.py can just be an empty file, but it can also execute initialization code for the
-# package or set the __all__ variable, described later.
+When the interpreter executes the import statement, it searches for module in a list of
+directories assembled from the following sources:
+
+- The directory from which the input script was run or the current directory if the interpreter is
+being run interactively
+- The list of directories contained in the PYTHONPATH environment variable, if it is set. (The
+format for PYTHONPATH is OS-dependent but should mimic the PATH environment variable.)
+- An installation-dependent list of directories configured at the time Python is installed
+
+The resulting search path is accessible in the Python variable sys.path, which is obtained from a
+module named sys:
+
+>>> import sys
+>>> sys.path
+
+@see: https://realpython.com/python-modules-packages/
+"""
 
 # Users of the package can import individual modules from the package, for example.
 import sound_package.effects.echo
