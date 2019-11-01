@@ -1,4 +1,3 @@
-name: learn-python
-owner: ActiveState
+project: https://platform.activestate.com/shnewto/learn-python?commitID=c3e759c8-6b60-441c-ad84-7628a4fb542f
 languages:
 - name: python
