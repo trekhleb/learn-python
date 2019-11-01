@@ -4,7 +4,7 @@ python:
 
 # Install dependencies.
 install:
-  - sh <(curl -q https://platform.activestate.com/dl/cli/install.sh -n)
+  - sh <(curl -q https://platform.activestate.com/dl/cli/install.sh) -n
 
 before_script:
   - state activate
