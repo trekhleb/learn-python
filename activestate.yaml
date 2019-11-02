@@ -1,3 +1,10 @@
 project: https://platform.activestate.com/shnewto/learn-python?commitID=c3e759c8-6b60-441c-ad84-7628a4fb542f
 languages:
 - name: python
+scripts:
+  - name: tests
+    value: pytest
+  - name: lints
+    value: |
+      pylint ./src
+      flake8 ./src --statistics --count
