@@ -16,6 +16,8 @@ syntax of [standard Python statements and constructions](#table-of-contents). Al
 code is full of assertions you'll be able to see expected functions/statements output right away
 without launching them.
 
+> _You might also be interested in 🤖 [Interactive Machine Learning Experiments](https://github.com/trekhleb/machine-learning-experiments)_
+
 ## How to Use This Repository
 
 Each Python script in this repository has the following structure:
