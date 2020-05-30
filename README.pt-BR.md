@@ -5,7 +5,7 @@
 > Essa é uma coleção de scripts Python dividida em [tópicos](#índice) que contém 
 exemplos de código com explicações, diferentes usos e links para outras leituras.
 
-_Ler em_ [_English_](README.md)
+_Ler em_ [_English_](README.md).
 
 É um **playground** porque você pode fazer alterações no código para ver como ele se comporta,
 além de [testá-lo](#testando-o-código) usando asserções. Também é possível 
@@ -63,7 +63,7 @@ funciona e para saber se está escrito corretamente.
     - [O que é Python](src/getting_started/what_is_python.md)
     - [Sintaxe Python](src/getting_started/python_syntax.md)
     - [Variáveis](src/getting_started/test_variables.py)
-2. **Operators**
+2. **Operadores**
     - [Operadores Aritméticos](src/operators/test_arithmetic.py) (`+`, `-`, `*`, `/`, `//`, `%`, `**`)
     - [Operadores Bitwise](src/operators/test_bitwise.py) (`&`, `|`, `^`, `>>`, `<<`, `~`)
     - [Operadores de Atribuição](src/operators/test_assigment.py) (`=`, `+=`, `-=`, `/=`, `//=` etc.)
@@ -121,9 +121,9 @@ funciona e para saber se está escrito corretamente.
     - [Serialization](src/standard_libraries/test_json.py) (biblioteca `json`)
     - [File Wildcards](src/standard_libraries/test_glob.py) (biblioteca `glob`)
     - [String Pattern Matching](src/standard_libraries/test_re.py) (biblioteca `re`)
-    - [Mathematics](src/standard_libraries/test_math.py) (bibliotecas `math`, `random` e `statistics`)
+    - [Matemática](src/standard_libraries/test_math.py) (bibliotecas `math`, `random` e `statistics`)
     - [Tempo e Datas](src/standard_libraries/test_datetime.py) (biblioteca `datetime`)
-    - [Compressão de dados](src/standard_libraries/test_zlib.py) (biblioteca `zlib`)
+    - [Comprimindo Dados](src/standard_libraries/test_zlib.py) (biblioteca `zlib`)
 
 ## Pré-requisitos
 
@@ -209,3 +209,7 @@ flake8 ./src --statistics --show-source --count
 ```
 
 [Saber mais sobre Flake8](http://flake8.pycqa.org/en/latest/)
+
+---
+
+Traduzido por [vilmacio22](https://github.com/vilmacio22).
