@@ -214,3 +214,7 @@ flake8 ./src --statistics --show-source --count
 ```
 
 [More about Flake8](http://flake8.pycqa.org/en/latest/)
+
+## Supporting the project
+
+You may support this project via ❤️️ [GitHub](https://github.com/sponsors/trekhleb) or ❤️️ [Patreon](https://www.patreon.com/trekhleb).
