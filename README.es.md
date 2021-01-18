@@ -8,8 +8,8 @@ ejemplos de código con sus explicaciones, diferentes usos y links a recursos ad
 _Lee esto en_ [_Inglés_](README.md), [_Portugués_](README.pt-BR.md).
 
 Es un **playground** ya que puedes cambiar o añadir cosas al código para ver
-cómo funciona y [probarlo](#probando-el-codigo) usando aserciones. También puedes
-[revisar el código](#revisando-el-codigo) que has escrito y averiguar si está acorde con
+cómo funciona y [probarlo](#probando-el-código) usando aserciones. También puedes
+[revisar el código](#revisando-el-código) que has escrito y averiguar si está acorde con
 la guía de estilos de Python. Todo esto, en conjunto, puede hacer que tu proceso de aprendizaje
 sea más interactivo y puede ayudarte a mantener la calidad del código muy alta desde el principio.
 
@@ -55,7 +55,7 @@ Normalmente, querrás hacer lo siguiente:
 - Leer los comentarios y/o la documentación que está escrita en cada docstring del script (toma como ejemplo el script de arriba).
 - Ver los ejemplos de código y las aserciones para conocer diferentes maneras de usar el código y entender el resultado previsto.
 - Cambiar el código o añadir nuevas aserciones para ver cómo funcionan las cosas.
-- [Probar](#probando-el-codigo) y [revisar](#revisando-el-codigo) el código para ver si funciona y si está escrito
+- [Probar](#probando-el-código) y [revisar](#revisando-el-código) el código para ver si funciona y si está escrito
 correctamente.
 
 ## Contenido
