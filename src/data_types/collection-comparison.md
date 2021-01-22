@@ -7,9 +7,10 @@
 |                   | {dictio:nary} | {set} | [list] | (tuple) |
 |-------------------|---------------|-------|--------|---------|
 | Changeble?        | yes           | no¹   | yes    | no      |
-| Indexed?          | N/A           | no    | yes    | yes     |
+| Indexed?          | yes²          | no    | yes    | yes     |
 | Ordered?          | no            | no    | yes    | yes     |
 | Allow Duplicates? | no            | no    | yes    | yes     |
 
 ¹ can add new items
 
+² indexed through keys
