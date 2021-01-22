@@ -4,8 +4,9 @@
 * Allow Duplicates: the collection can have items with the same value
 
 
-|                   | {dictio:nary} | {set} | [list] | (tuple) |
+|                   | dictionary    | set   | list   | tuple   |
 |-------------------|---------------|-------|--------|---------|
+| Initializer       | { key:value } | { }   | [ ]    | ( )     |
 | Changeble?        | yes           | no¹   | yes    | no      |
 | Indexed?          | yes²          | no    | yes    | yes     |
 | Ordered?          | no            | no    | yes    | yes     |
