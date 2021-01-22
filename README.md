@@ -80,7 +80,7 @@ written correctly.
     - [Sets](src/data_types/test_sets.py) and their methods
     - [Dictionaries](src/data_types/test_dictionaries.py)
     - [Type Casting](src/data_types/test_type_casting.py)
-    - [Collections Comparison](src/data_types/collection-comparison.md)
+    - [Data Structures Comparison](src/data_types/data_structures_comparison.md)
 4. **Control Flow**
     - [The `if` statement](src/control_flow/test_if.py)
     - [The `for` statement](src/control_flow/test_for.py) (and `range()` function)
