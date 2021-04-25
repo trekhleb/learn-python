@@ -22,4 +22,4 @@ def test_break_statement():
             number_of_iterations += 1
 
     # We need to make sure that break statement has terminated the loop once it found the number.
-    assert number_of_iterations == 42
+    assert number_to_be_found == 42
