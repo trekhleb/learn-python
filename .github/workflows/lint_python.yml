@@ -11,10 +11,10 @@ jobs:
       - run: black --check . || true
       - run: codespell --skip="./README.pt-BR.md"
       - run: flake8 . --count --max-complexity=12 --max-line-length=100 --show-source --statistics
-      - run: isort --check-only --profile black . || true
+      - run: isort --check-only . || true  # --profile black
       - run: pip install -r requirements.txt
-      - run: mypy --install-types --non-interactive . || true
+      - run: mypy --install-types --non-interactive .
       - run: pytest .
       - run: pytest --doctest-modules . || true
       - run: shopt -s globstar && pyupgrade --py36-plus **/*.py || true
-      - run: safety check || true
+      - run: safety check
