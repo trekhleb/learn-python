@@ -28,7 +28,8 @@ The resulting search path is accessible in the Python variable sys.path, which i
 module named sys:
 
 >>> import sys
->>> sys.path
+>>> sys.path  # doctest: +ELLIPSIS
+[...]
 
 @see: https://realpython.com/python-modules-packages/
 """
