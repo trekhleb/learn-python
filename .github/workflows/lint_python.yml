@@ -14,7 +14,6 @@ jobs:
       - run: isort --check-only . || true  # --profile black
       - run: pip install -r requirements.txt
       - run: mypy --install-types --non-interactive .
-      - run: pytest .
-      - run: pytest --doctest-modules . || true
+      - run: pytest --doctest-modules .
       - run: shopt -s globstar && pyupgrade --py36-plus **/*.py || true
       - run: safety check
