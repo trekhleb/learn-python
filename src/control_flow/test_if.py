@@ -13,14 +13,19 @@ in other languages.
 def test_if_statement():
     """IF statement"""
 
-    number = 15
+    number = -20
     conclusion = ''
 
     if number < 0:
         conclusion = 'Number is less than zero'
-    elif number == 0:
+        if number > -10:
+            conclusion += ' and greater than negative ten'
+        if number > -100:
+            conclusion += ' and greater than negative ten'
+
+    if number == 0:
         conclusion = 'Number equals to zero'
-    elif number < 1:
+    if number < 1:
         conclusion = 'Number is greater than zero but less than one'
     else:
         conclusion = 'Number bigger than or equal to one'

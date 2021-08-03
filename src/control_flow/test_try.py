@@ -64,3 +64,9 @@ def test_try():
         message += 'The "try except" is finished.'
 
     assert message == 'Something went wrong.The "try except" is finished.'
+    numbers = [1, 2, 3, 4, 5, 6]
+    try:
+        print(numbers[100])
+    except IndexError:
+        message = "index out of range"
+    assert message == "index out of range"
