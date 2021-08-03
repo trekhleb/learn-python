@@ -73,7 +73,13 @@ def test_list_type():
     assert mixed_list == [['a', 'b', 'c'], [1, 2, 3]]
     assert mixed_list[0] == ['a', 'b', 'c']
     assert mixed_list[0][1] == 'b'
-
+    a_list = [i for i in range(5)]
+    assert a_list == [0, 1, 2, 3, 4]
+    zeros_list = [0]*3
+    assert zeros_list == [0, 0, 0]
+    ones_2d_list = [[1]*3]*3
+    assert ones_2d_list == [[1, 1, 1], [1, 1, 1], [1, 1, 1]]
+    assert isinstance('a b c d e'.split(' '),list)
 
 def test_list_methods():
     """Test list methods."""
@@ -168,6 +174,9 @@ def test_list_methods():
     # Remove all items from the list. Equivalent to del a[:].
     fruits.clear()
     assert fruits == []
+    numbers = [4, 2, 123, 5, 6, 10]
+    numbers.sort()
+    assert numbers == [2, 4, 5, 6, 10, 123]
 
 
 def test_del_statement():
@@ -196,7 +205,9 @@ def test_del_statement():
         # Referencing the name a hereafter is an error (at least until another
         # value is assigned to it).
         assert numbers == []  # noqa: F821
-
+    letters = ['a', 'b', 'c', 'd']
+    del letters[2]
+    assert letters == ['a', 'b', 'd']
 
 def test_list_comprehensions():
     """List Comprehensions.
@@ -216,6 +227,8 @@ def test_list_comprehensions():
     for number in range(10):
         squares.append(number ** 2)
 
+    assert squares == [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+    squares = [i*i for i in range(10)]
     assert squares == [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
 
     # Note that this creates (or overwrites) a variable named "number" that still exists after
