@@ -13,8 +13,8 @@ Where in other programming languages the indentation in code is for readability 
 Python uses indentation to indicate a block of code.
 
 ```python
-if 5 > 2:
-  print("Five is greater than two!")
+if 5 > 3:
+  print("Five is greater than 3!")
 ```
 
 Python will give you an error if you skip the indentation.
