@@ -17,17 +17,15 @@ def test_integer_numbers():
     Int, or integer, is a whole number, positive or negative,
     without decimals, of unlimited length.
     """
-    """positive_integer = 1
+
+    positive_integer = 1
     negative_integer = -3255522
     big_integer = 35656222554887711
 
     assert isinstance(positive_integer, int)
     assert isinstance(negative_integer, int)
     assert isinstance(big_integer, int)
-    """
-    values = [1, -3255522, 35656222554887711, 123, -129, 345]
-    for i in values:
-        assert  isinstance(i, int)
+
 
 def test_booleans():
     """Boolean
@@ -38,6 +36,7 @@ def test_booleans():
     exception being that when converted to a string, the strings "False" or "True" are returned,
     respectively.
     """
+
     true_boolean = True
     false_boolean = False
 
@@ -50,12 +49,6 @@ def test_booleans():
     # Let's try to cast boolean to string.
     assert str(true_boolean) == "True"
     assert str(false_boolean) == "False"
-    values = [2+2 == 4, 3 < 4, 10 > 5, "amk"[0] == 'a']
-    for i in values:
-        assert i
-    values_false = [2 + 3 == 0, 10 < 2, 0 > 100]
-    for i in values_false:
-        assert not i
 
 
 def test_float_numbers():
@@ -84,24 +77,17 @@ def test_float_numbers():
     assert float_with_big_e == 120000
     assert isinstance(12E4, float)
     assert isinstance(-87.7e100, float)
-    values = [10/2, 5/3, 4/3, 27/4]
-    for i in values:
-        assert  isinstance(i,float)
 
 
-# noinspection PyPackageRequirements
 def test_complex_numbers():
     """Complex Type"""
 
     complex_number_1 = 5 + 6j
     complex_number_2 = 3 - 2j
-    c3 = 0j
-    c4 = 4
+
     assert isinstance(complex_number_1, complex)
     assert isinstance(complex_number_2, complex)
     assert complex_number_1 * complex_number_2 == 27 + 8j
-    # noinspection PyPackageRequirements
-    assert isinstance(c3+c4,complex)
 
 
 def test_number_operators():
@@ -132,8 +118,3 @@ def test_number_operators():
     # There is full support for floating point; operators with
     # mixed type operands convert the integer operand to floating point.
     assert 4 * 3.75 - 1 == 14.0
-    values = [2**4, 4/2, 5/2, 3.0*3, 2*4, 10//3]
-    results = [4*4, 2.0, 2.5, 9.0, 8, 3]
-    for i, j in zip(values, results):
-        assert i == j
-

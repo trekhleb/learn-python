@@ -29,11 +29,3 @@ def test_while_statement():
 
     # 2^5 = 32
     assert result == 32
-    i = 0
-    numbers = [-1, 4, 1, 5, 3, -100, 2]
-    while True:
-        if numbers[i] == -100:
-            i = numbers[i]
-            break
-        i = numbers[i]
-    assert i == -100

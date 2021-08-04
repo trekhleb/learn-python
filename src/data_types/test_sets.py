@@ -68,8 +68,3 @@ def test_set_methods():
     # Similarly to list comprehensions, set comprehensions are also supported:
     word = {char for char in 'abracadabra' if char not in 'abc'}
     assert word == {'r', 'd'}
-    my_set = {'a', 'a', 'b'}
-    assert len(my_set) == 2
-    set1 = {'a', 'b', 'c'}
-    set2 = {'c', 'x', 'z'}
-    assert  set2 ^ set1 == (set2 | set1) - (set2 & set1)

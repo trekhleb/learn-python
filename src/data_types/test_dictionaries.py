@@ -77,7 +77,3 @@ def test_dictionary():
     assert dictionary_for_string_keys['sape'] == 4139
     assert dictionary_for_string_keys['guido'] == 4127
     assert dictionary_for_string_keys['jack'] == 4098
-    odd_numbers_dictionary = {x: x % 2 != 0 for x in range(15)}
-    assert odd_numbers_dictionary[3]
-    assert odd_numbers_dictionary[5]
-    assert odd_numbers_dictionary[7]
