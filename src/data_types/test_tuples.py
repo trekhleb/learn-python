@@ -86,3 +86,6 @@ def test_tuples():
 
     assert first_number == 456
     assert second_number == 123
+    my_tuple = (1, 2, 3, 4)
+    another_tuple = my_tuple[2], my_tuple[1], my_tuple[0], my_tuple[3]
+    assert another_tuple == (3, 2, 1, 4)

@@ -26,6 +26,10 @@ def test_type_casting_to_integer():
     assert int(1) == 1
     assert int(2.8) == 2
     assert int('3') == 3
+    values = [4//1, int(10/5), int('1'+'4')]
+    for i in values:
+        assert i
+
 
 
 def test_type_casting_to_float():
@@ -35,6 +39,9 @@ def test_type_casting_to_float():
     assert float(2.8) == 2.8
     assert float("3") == 3.0
     assert float("4.2") == 4.2
+    values = [10/1.0, 10//1.0, float('1.0'+'321'), float(-3)]
+    for i in values:
+        assert  isinstance(i, float)
 
 
 def test_type_casting_to_string():
@@ -43,3 +50,6 @@ def test_type_casting_to_string():
     assert str("s1") == 's1'
     assert str(2) == '2'
     assert str(3.0) == '3.0'
+    values = [str([1, 2, 3]), str({'a', 'b','c'}), str({0: 1, 1: 2})]
+    for i in values:
+        assert isinstance(i,str)

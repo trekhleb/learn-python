@@ -23,3 +23,9 @@ def test_break_statement():
 
     # We need to make sure that break statement has terminated the loop once it found the number.
     assert number_of_iterations == 42
+
+    numbers = [1, 2, 3, 4, 5, 6, 10123, 123, 4324, 543]
+    for i in numbers:
+        if i > 10:
+            break
+    assert i > 10
