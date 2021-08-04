@@ -46,7 +46,11 @@ def fibonacci_function_example(number_limit):
     # argument returns None. Falling off the end of a function also returns None.
     return fibonacci_list
 
-
+def factorial(n):
+    result = 1
+    for i in range(2,n+1):
+        result *= i
+    return i
 def test_function_definition():
     """Function Definition"""
 
@@ -121,3 +125,5 @@ def test_function_definition():
     greet_with_closure = compose_greet_func_with_closure('John')
 
     assert greet_with_closure() == 'Hello there, John!'
+    my_factorial = factorial
+    assert my_factorial(4) == 24

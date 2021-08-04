@@ -89,3 +89,13 @@ def test_function_decorators():
         return "Hello, {0}!".format(name)
 
     assert greeting_with_tags('John') == '<div><p>Hello, John!</p></div>'
+    def wrap(tag):
+        def decorator(func):
+            def wrapper(*name):
+                return F"<{tag}>{func(*name)}</{tag}>"
+            return wrapper
+        return decorator
+    @wrap('amk')
+    def wish(occasion, name):
+        return F"happy {occasion}, {name}"
+    assert wish('birthday', 'moize') == "<amk>happy birthday, moize</amk>"

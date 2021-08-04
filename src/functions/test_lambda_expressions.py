@@ -30,5 +30,11 @@ def test_lambda_expressions():
     pairs = [(1, 'one'), (2, 'two'), (3, 'three'), (4, 'four')]
     # Sort pairs by text key.
     pairs.sort(key=lambda pair: pair[1])
-
     assert pairs == [(4, 'four'), (1, 'one'), (3, 'three'), (2, 'two')]
+    assert (lambda x: x*x)(2) == 4
+    list_1 = range(10)
+    assert list(filter(lambda x: x % 2 == 0, list_1)) == [0, 2, 4, 6, 8]
+    list_1 = [1, 2, 3, 4, 5]
+    cubed = map(lambda x: x * x * x, list_1)
+    assert list(cubed) == [1, 8, 27, 64, 125]
+    

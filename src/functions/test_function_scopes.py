@@ -105,3 +105,25 @@ def test_global_variable_access():
     # it was changed by "someone" and you need to know about the CONTEXT of who had changed that.
     # So once again access global and non local scope only if you know what you're doing otherwise
     # it might be considered as bad practice.
+
+global_variable = "GV"
+
+def test_variable_scopes():
+    outer_variable = "OV"
+    # read access only changes will not be seen in parent scope
+    assert global_variable == "GV"
+    def global_access():
+        global_variable = "GV!"
+
+    global_access()
+    assert  global_variable == "GV"
+    def global_change():
+        global global_variable
+        global_variable = "Changed GV"
+    global_change()
+    assert  global_variable == "Changed GV"
+    def local_change():
+        nonlocal outer_variable
+        global_variable = "New GV"
+    local_change()
+    assert global_variable == "Changed GV"

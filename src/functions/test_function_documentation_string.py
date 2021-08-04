@@ -40,3 +40,8 @@ def test_function_documentation_string():
 
     No, really, it doesn't do anything.
     """
+    """
+    this is a documenation string
+    i can write anything here but the idea is to write something that will help
+    another person understand this function.
+    """

@@ -21,6 +21,13 @@ def test_function_unpacking_arguments():
     # Call with arguments unpacked from a list.
     arguments_list = [3, 6]
     assert list(range(*arguments_list)) == [3, 4, 5]
+    arr = [3, 4, 5]
+    arr = [1, 2, *arr]
+    assert arr == [1, 2, 3, 4, 5]
+
+    def func(a1, a2, a3, a4, a5):
+        return a1 + a2 + a3 + a4 + a5
+    assert func(*arr) == 15
 
     # In the same fashion, dictionaries can deliver keyword arguments with the **-operator:
     def function_that_receives_names_arguments(first_word, second_word):
@@ -28,3 +35,5 @@ def test_function_unpacking_arguments():
 
     arguments_dictionary = {'first_word': 'Hello', 'second_word': 'World'}
     assert function_that_receives_names_arguments(**arguments_dictionary) == 'Hello, World!'
+    arguments_dictionary = {'a1': 1, 'a2': 2, 'a3': 3, 'a4': 4, 'a5': 5}
+    assert func(**arguments_dictionary) == 15
