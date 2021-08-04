@@ -29,5 +29,7 @@ def test_continue_statement():
     assert rest_of_the_numbers == [1, 3, 5, 7, 9]
     sum_of_odd_numbers = 0
     for i in range(10):
-        if i % 2 == 0 : continue
+        if i % 2 == 0:
+            continue
         sum_of_odd_numbers += i
+    assert sum_of_odd_numbers == 25

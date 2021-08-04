@@ -30,6 +30,12 @@ def test_for_statement():
         words_length += len(words[i])
     assert words_length == (3 + 6 + 12)
 
+    names = ['amk', 'hamza', 'ali']
+    last_names = ['arif', 'khizar', 'fareed']
+    combined_names = []
+    for i, j in zip(names, last_names):
+        combined_names.append(i+' '+j)
+    assert combined_names == ['amk arif', 'hamza khizar', 'ali fareed']
     # If you need to modify the sequence you are iterating over while inside the loop
     # (for example to duplicate selected items), it is recommended that you first make a copy.
     # Iterating over a sequence does not implicitly make a copy. The slice notation makes this
@@ -43,10 +49,7 @@ def test_for_statement():
 
     assert words == ['defenestrate', 'cat', 'window', 'defenestrate']
     words = ['cat', 'window', 'defenestrate']
-    for word in list(words):
-        if len(word) > 6:
-            words = [word] + words
-    assert words == ['defenestrate', 'cat', 'window', 'defenestrate']
+
 
     # If you do need to iterate over a sequence of numbers, the built-in function range() comes in
     # handy. It generates arithmetic progressions:
@@ -70,10 +73,14 @@ def test_for_statement():
     # pylint: disable=consider-using-enumerate
     for word_index in range(len(words)):
         concatenated_string += words[word_index] + ' '
-    concatenated_string = ''
-    for i in words:
-        concatenated_string += i + ' '
+
     assert concatenated_string == 'Mary had a little lamb '
+    numbers = [5, 4, 3, 2, 1]
+    reverse_numbers = []
+    for i in range(len(numbers)-1, -1, -1):
+        reverse_numbers.append(numbers[i])
+    assert reverse_numbers == [1, 2, 3, 4, 5]
+
 
     # Or simply use enumerate().
     concatenated_string = ''
@@ -126,7 +133,7 @@ def test_for_statement():
     result = {}
     for i, j in zip(name, marks):
         result[i] = j
-    assert result == {'amk' :100, 'ali': 9, 'hamza': 10}
+    assert result == {'amk': 100, 'ali': 9, 'hamza': 10}
 
 
 def test_range_function():

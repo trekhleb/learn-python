@@ -44,3 +44,17 @@ def test_class_definition():
 
     assert greeter.say_hello() == 'Hello user'
     assert greeter.say_goodbye() == 'Goodbye user'
+
+    class Greet:
+        name = ''
+
+        def greet(self, name):
+            self.name = name
+            return 'hello, '+self.name
+
+        def bye(self, name):
+            return 'bye, '+self.name
+
+    obj = Greet()
+    assert obj.greet('amk') == 'hello, amk'
+    assert obj.bye('ali') == 'bye, amk'

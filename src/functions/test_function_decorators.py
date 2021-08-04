@@ -99,3 +99,4 @@ def test_function_decorators():
     def wish(occasion, name):
         return F"happy {occasion}, {name}"
     assert wish('birthday', 'moize') == "<amk>happy birthday, moize</amk>"
+

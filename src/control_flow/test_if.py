@@ -21,13 +21,13 @@ def test_if_statement():
         if number > -10:
             conclusion += ' and greater than negative ten'
         if number > -100:
-            conclusion += ' and greater than negative ten'
+            conclusion += ' and greater than negative hundred'
 
-    if number == 0:
+    elif number == 0:
         conclusion = 'Number equals to zero'
-    if number < 1:
+    elif number < 1:
         conclusion = 'Number is greater than zero but less than one'
     else:
         conclusion = 'Number bigger than or equal to one'
 
-    assert conclusion == 'Number bigger than or equal to one'
+    assert conclusion == 'Number is less than zero and greater than negative hundred'
