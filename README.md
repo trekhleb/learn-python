@@ -125,6 +125,8 @@ written correctly.
     - [Mathematics](src/standard_libraries/test_math.py) (`math`, `random`, `statistics` libraries)
     - [Dates and Times](src/standard_libraries/test_datetime.py) (`datetime` library)
     - [Data Compression](src/standard_libraries/test_zlib.py) (`zlib` library)
+12. **User input**
+    - [Terminal input](src/user_input/test_input.py) from users to interact with the program
 
 ## Prerequisites
 
