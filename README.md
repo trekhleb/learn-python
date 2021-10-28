@@ -111,7 +111,7 @@ written correctly.
     - [Packages](src/modules/test_packages.py)
 8. **Errors and Exceptions**
     - [Handling Exceptions](src/exceptions/test_handle_exceptions.py) (`try` statement)
-    - [Raising Exceptions](src/exceptions/test_raise_exceptions.py) (`raise` statement) 
+    - [Raising Exceptions](src/exceptions/test_raise_exceptions.py) (`raise` statement)
 9. **Files**
     - [Reading and Writing](src/files/test_file_reading.py) (`with` statement)
     - [Methods of File Objects](src/files/test_file_methods.py)
@@ -125,6 +125,8 @@ written correctly.
     - [Mathematics](src/standard_libraries/test_math.py) (`math`, `random`, `statistics` libraries)
     - [Dates and Times](src/standard_libraries/test_datetime.py) (`datetime` library)
     - [Data Compression](src/standard_libraries/test_zlib.py) (`zlib` library)
+12. **User input**
+    - [Terminal input](src/user_input/test_input.py) (`input` statement)
 
 ## Prerequisites
 
