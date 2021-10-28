@@ -5,7 +5,7 @@
 > Essa é uma coleção de scripts Python dividida em [tópicos](#índice) que contém 
 exemplos de código com explicações, diferentes usos e links para outras leituras.
 
-_Ler em_ [_English_](README.md).
+_Ler em:_ [_English_](README.md), [_Español_](README.es-ES.md).
 
 _Ler em_ [_Traditional Chinese_](README.zh-TW.md).
 
