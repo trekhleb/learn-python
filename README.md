@@ -7,6 +7,8 @@ code examples with explanations, different use cases and links to further readin
 
 _Read this in:_ [_Português_](README.pt-BR.md), [_Español_](README.es-ES.md).
 
+_Read this in_ [_Traditional Chinese_](README.zh-TW.md).
+
 It is a **playground** because you may change or add the code to see how it works 
 and [test it out](#testing-the-code) using assertions. It also allows you 
 to [lint the code](#linting-the-code) you've wrote and check if it fits to Python code style guide.

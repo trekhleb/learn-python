@@ -7,6 +7,8 @@ exemplos de código com explicações, diferentes usos e links para outras leitu
 
 _Ler em:_ [_English_](README.md), [_Español_](README.es-ES.md).
 
+_Ler em_ [_Traditional Chinese_](README.zh-TW.md).
+
 É um **playground** porque você pode fazer alterações no código para ver como ele se comporta,
 além de [testá-lo](#testando-o-código) usando asserções. Também é possível 
 [revisar o código](#revisando-o-código) que você escreveu automaticamente e verificar se ele se encaixa
