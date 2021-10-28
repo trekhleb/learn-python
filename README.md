@@ -5,7 +5,7 @@
 > This is a collection of Python scripts that are split by [topics](#table-of-contents) and contain 
 code examples with explanations, different use cases and links to further readings.
 
-_Read this in_ [_Português_](README.pt-BR.md), [_Español_](README.es.md).
+_Read this in:_ [_Português_](README.pt-BR.md), [_Español_](README.es-ES.md).
 
 It is a **playground** because you may change or add the code to see how it works 
 and [test it out](#testing-the-code) using assertions. It also allows you 

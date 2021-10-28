@@ -5,7 +5,7 @@
 > Esta es una colección de scripts de Python divididos en [categorías](#contenido) que contienen
 ejemplos de código con sus explicaciones, diferentes usos y links a recursos adicionales.
 
-_Lee esto en_ [_Inglés_](README.md), [_Portugués_](README.pt-BR.md).
+_Lee esto en:_ [_Inglés_](README.md), [_Portugués_](README.pt-BR.md).
 
 Es un **playground** ya que puedes cambiar o añadir cosas al código para ver
 cómo funciona y [probarlo](#probando-el-código) usando aserciones. También puedes
