@@ -54,8 +54,6 @@ filter = ContentFilter([
 filtered_content = filter.filter(content)
 
 
-
-
 # Command
 class RenameFileCommand(object):
 	"""Command execution when needed"""

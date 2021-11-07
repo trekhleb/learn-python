@@ -45,8 +45,6 @@ class Car(object):
         return self._tank.level
 
 
-
-
 # Adapter --> similar to Bridge and Proxy
 import socket
 
@@ -67,8 +65,6 @@ def log(message, destination):
 
 upd_logger = SocketWriter('1.2.3.4', '9999')
 log('Something happened', udp_destination)
-
-
 
 
 # Decorator
