@@ -127,6 +127,11 @@ written correctly.
     - [Data Compression](src/standard_libraries/test_zlib.py) (`zlib` library)
 12. **User input**
     - [Terminal input](src/user_input/test_input.py) (`input` statement)
+13. **Design Patterns**
+    - [Creational Patterns](src/design_patterns/creational_patterns/creational_pattern.py) (`creational` design pattern)
+    - [Structural Patterns](src/design_patterns/structural_patterns/structural_pattern.py) (`structural` design pattern)
+    - [Behavioral Patterns](src/design_patterns/behavioral_patterns/behavioral_pattern.py) (`behavioral` design pattern)
+    - [Concurrency Patterns](src/design_patterns/concurrency_patterns/concurrency_pattern.py) (`concurrency` design pattern)
 
 ## Prerequisites
 
