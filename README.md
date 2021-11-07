@@ -128,10 +128,10 @@ written correctly.
 12. **User input**
     - [Terminal input](src/user_input/test_input.py) (`input` statement)
 13. **Design Patterns**
-    - [Creational Patterns](src/design_patterns/creational_patterns/creational_pattern.py) (`creational` design pattern)
-    - [Structural Patterns](src/design_patterns/structural_patterns/structural_pattern.py) (`structural` design pattern)
-    - [Behavioral Patterns](src/design_patterns/behavioral_patterns/behavioral_pattern.py) (`behavioral` design pattern)
-    - [Concurrency Patterns](src/design_patterns/concurrency_patterns/concurrency_pattern.py) (`concurrency` design pattern)
+    - [Creational Patterns](src/design_patterns/creational_patterns/test_creational_pattern.py) (`creational` design pattern)
+    - [Structural Patterns](src/design_patterns/structural_patterns/test_structural_pattern.py) (`structural` design pattern)
+    - [Behavioral Patterns](src/design_patterns/behavioral_patterns/test_behavioral_pattern.py) (`behavioral` design pattern)
+    - [Concurrency Patterns](src/design_patterns/concurrency_patterns/test_concurrency_pattern.py) (`concurrency` design pattern)
 
 ## Prerequisites
 
