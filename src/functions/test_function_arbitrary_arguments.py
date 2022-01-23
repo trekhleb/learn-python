@@ -16,7 +16,7 @@ def test_function_arbitrary_arguments():
     # containing the positional arguments beyond the formal parameter list.
     # (*name must occur before **name.) For example, if we define a function like this:
     def test_function(first_param, *arguments):
-        """This function accepts its arguments through "arguments" tuple amd keywords dictionary."""
+        """This function accepts its arguments through "arguments" tuple and keywords dictionary."""
         assert first_param == 'first param'
         assert arguments == ('second param', 'third param')
 
