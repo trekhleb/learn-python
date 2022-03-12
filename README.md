@@ -2,6 +2,7 @@
 > 🇺🇦 UKRAINE [IS BEING ATTACKED](https://twitter.com/MFA_Ukraine) BY RUSSIAN ARMY. CIVILIANS ARE GETTING KILLED. RESIDENTIAL AREAS ARE GETTING BOMBED.
 > - Help Ukraine via [National Bank of Ukraine](https://bank.gov.ua/en/news/all/natsionalniy-bank-vidkriv-spetsrahunok-dlya-zboru-koshtiv-na-potrebi-armiyi)
 > - Help Ukraine via [SaveLife](https://savelife.in.ua/en/donate/) fund
+> - More info on [war.ukraine.ua](https://war.ukraine.ua/)
 
 [![Build Status](https://travis-ci.org/trekhleb/learn-python.svg?branch=master)](https://travis-ci.org/trekhleb/learn-python)
 
