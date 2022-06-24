@@ -15,6 +15,7 @@ def test_bitwise_operators():
     # Example:
     # 5 = 0b0101
     # 3 = 0b0011
+    print(-5 & -5)
     assert 5 & 3 == 1  # 0b0001
 
     # OR
@@ -55,3 +56,5 @@ def test_bitwise_operators():
     # 5 = 0b0101
     assert 5 << 1 == 10  # 0b1010
     assert 5 << 2 == 20  # 0b10100
+
+test_bitwise_operators()
