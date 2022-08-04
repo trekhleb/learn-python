@@ -1,5 +1,5 @@
-"""Generators.
 
+"""Generators.
 @see: https://www.learnpython.org/en/Generators
 
 Generators are used to create iterators, but with a different approach. Generators are simple
