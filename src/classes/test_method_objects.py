@@ -55,6 +55,7 @@ def test_method_objects():
     # calling a method with a list of n arguments is equivalent to calling the corresponding
     # function with an argument list that is created by inserting the method’s instance object
     # before the first argument.
-
-    assert counter.get_counter() == 10
-    assert MyCounter.get_counter(counter) == 10
+    counter.increment_counter()
+    new_counter = MyCounter()
+    assert counter.get_counter() == 11
+    assert MyCounter.get_counter(new_counter) == 10

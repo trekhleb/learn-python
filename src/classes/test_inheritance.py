@@ -47,7 +47,10 @@ class Employee(Person):
         """Get full employee id"""
         return self.get_name() + ', ' + self.staff_id
 
-
+class Manager(Employee):
+    def __init__(self, name, staff_id, department ):
+        super().__init__(name, staff_id)
+        self.department = department
 def test_inheritance():
     """Inheritance."""
 
@@ -57,10 +60,11 @@ def test_inheritance():
     # reference is valid if this yields a function object.
     person = Person('Jack')
     employee = Employee('John', 'A1')
+    manager = Manager('Ali', 'A3', 'Finance')
 
     assert person.get_name() == 'Jack'
     assert employee.get_name() == 'John'
-
+    assert manager.get_name() == 'Ali'
     employee.name = 'Bill'
     assert employee.get_full_id() == 'Bill, A1'
 
@@ -78,6 +82,7 @@ def test_inheritance():
 
     assert isinstance(person, Person)
     assert isinstance(employee, Person)
+    assert  not isinstance(employee, Manager)
 
     assert issubclass(Employee, Person)
     assert not issubclass(Person, Employee)

@@ -9,12 +9,17 @@ its attributes, along with the attributes of all the classes that it was derived
 
 def test_multiple_inheritance():
     """Multiple Inheritance"""
-
+    class Parent:
+        temp="Dummy variable"
     # pylint: disable=too-few-public-methods
-    class Clock:
+    class Clock(Parent):
         """Clock class"""
 
         time = '11:23 PM'
+
+        def getparentdata(self):
+            self.temp = "Parent from clock class"
+            return self.temp
 
         def get_time(self):
             """Get current time
@@ -24,10 +29,14 @@ def test_multiple_inheritance():
             return self.time
 
     # pylint: disable=too-few-public-methods
-    class Calendar:
+    class Calendar(Parent):
         """Calendar class"""
 
         date = '12/08/2018'
+
+        def getparentdata(self):
+            self.temp = "Parent from calender class"
+            return self.temp
 
         def get_date(self):
             """Get current date
@@ -66,3 +75,4 @@ def test_multiple_inheritance():
 
     assert calendar_clock.get_date() == '12/08/2018'
     assert calendar_clock.get_time() == '11:23 PM'
+    assert calendar_clock.getparentdata() == 'Parent from clock class'
