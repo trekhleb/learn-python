@@ -5,6 +5,8 @@
 > - Help Ukraine via [SaveLife](https://savelife.in.ua/en/donate-en/) fund
 > - More info on [war.ukraine.ua](https://war.ukraine.ua/) and [MFA of Ukraine](https://twitter.com/MFA_Ukraine)
 
+<hr/>
+
 [![Build Status](https://travis-ci.org/trekhleb/learn-python.svg?branch=master)](https://travis-ci.org/trekhleb/learn-python)
 
 > This is a collection of Python scripts that are split by [topics](#table-of-contents) and contain 
