@@ -34,10 +34,6 @@ Each Python script in this repository has the following structure:
 ```python
 """Lists  <--- Name of the topic here
 
-## Author
-
-- [@trekhleb](https://trekhleb.dev)
-
 # @see: https://www.learnpython.org/en/Lists  <-- Link to further readings goes here
 
 Here might go more detailed explanation of the current topic (i.e. general info about Lists).
@@ -228,6 +224,6 @@ flake8 ./src --statistics --show-source --count
 
 [More about Flake8](http://flake8.pycqa.org/en/latest/)
 
-## Supporting the project
+## Author
 
-You may support this project via ❤️️ [GitHub](https://github.com/sponsors/trekhleb) or ❤️️ [Patreon](https://www.patreon.com/trekhleb).
+- [@trekhleb](https://trekhleb.dev)
