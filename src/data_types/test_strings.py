@@ -77,7 +77,7 @@ def test_string_type():
     #  | P | y | t | h | o | n |
     #  +---+---+---+---+---+---+
     #  0   1   2   3   4   5   6
-    # -6  -5  -4  -3  -2  -1
+    #  -7 -6  -5  -4  -3  -2  -1
 
     # Attempting to use an index that is too large will result in an error.
     with pytest.raises(Exception):
