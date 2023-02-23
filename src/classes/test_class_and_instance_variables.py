@@ -72,7 +72,7 @@ def test_class_and_instance_variables():
         def add_trick(self, trick):
             """Add trick to the dog
 
-            This function illustrate mistaken use of mutable class variable tricks (see below).
+            This function illustrate a correct use of mutable class variable tricks (see below).
             """
             self.tricks.append(trick)
 

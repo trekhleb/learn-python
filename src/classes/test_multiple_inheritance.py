@@ -41,8 +41,8 @@ def test_multiple_inheritance():
     class CalendarClock(Clock, Calendar):
         """Class that uses multiple inheritance.
 
-        For most purposes, in the simplest cases, you can think of the search for attributes i
-        nherited from a parent class as depth-first, left-to-right, not searching twice in the same
+        For most purposes, in the simplest cases, you can think of the search for attributes
+        inherited from a parent class as depth-first, left-to-right, not searching twice in the same
         class where there is an overlap in the hierarchy. Thus, if an attribute is not found in
         CalendarClock, it is searched for in Clock, then (recursively) in the base classes of
         Clock, and if it was not found there, it was searched for in Calendar, and so on.
