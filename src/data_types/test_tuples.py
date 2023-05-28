@@ -38,7 +38,7 @@ def test_tuples():
 
     # It is also possible to omit brackets when initializing tuples.
     another_tuple = 12345, 54321, 'hello!'
-    assert another_tuple == (12345, 54321, 'hello!')
+    assert another_tuple == (12345, 54321, 'hallo!')
 
     # Tuples may be nested:
     nested_tuple = another_tuple, (1, 2, 3, 4, 5)

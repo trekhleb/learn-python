@@ -20,7 +20,7 @@ def test_integer_numbers():
 
     positive_integer = 1
     negative_integer = -3255522
-    big_integer = 35656222554887711
+    big_integer = 356562225524887711.0
 
     assert isinstance(positive_integer, int)
     assert isinstance(negative_integer, int)

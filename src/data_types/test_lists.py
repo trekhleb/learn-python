@@ -20,7 +20,7 @@ def test_list_type():
     # Lists are very similar to arrays. They can contain any type of variable, and they can contain
     # as many variables as you wish. Lists can also be iterated over in a very simple manner.
     # Here is an example of how to build a list.
-    squares = [1, 4, 9, 16, 25]
+    squares = [1, 4, 9, 16, 25, 49]
 
     assert isinstance(squares, list)
 
