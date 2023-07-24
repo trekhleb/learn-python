@@ -47,3 +47,4 @@ print("Hello, World!")
 ## References
 
 - [w3schools.com](https://www.w3schools.com/python/python_syntax.asp)
+- [Scaler Topics](https://www.scaler.com/topics/python/python-syntax/)
