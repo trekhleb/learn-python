@@ -26,13 +26,15 @@ Rules for Python variables:
 def test_variables():
     """Test variables"""
 
-    integer_variable = 5
+    integer_variable = 10
     string_variable = 'John'
 
-    assert integer_variable == 5
+    # assert type(integer_variable) == int
+    assert isinstance(integer_variable)
     assert string_variable == 'John'
 
     variable_with_changed_type = 4  # x is of type int
     variable_with_changed_type = 'Sally'  # x is now of type str
 
+    assert isinstance(variable_with_changed_type, str)
     assert variable_with_changed_type == 'Sally'
