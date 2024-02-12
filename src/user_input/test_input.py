@@ -15,3 +15,9 @@ def user_input():
 
 	# Printing a message based on the input.
 	print(f"Welcome, {user_input}!")
+
+	# Printing statement to signal the user that we are waiting for input.
+	user_input_address = input("Please type in your address\n")
+
+	# Printing a message based on the input.
+	print(f"Great, we have your address as {user_input_address}!")
