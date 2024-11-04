@@ -149,7 +149,7 @@ Ten en cuenta que cuando leas `python` en este repositorio, se asume que es Pyth
 
 **Instalando dependencias**
 
-Instala todas las depencias requeridas para el proyecto ejecutando:
+Instala todas las dependencias requeridas para el proyecto ejecutando:
 
 ```bash
 pip install -r requirements.txt
