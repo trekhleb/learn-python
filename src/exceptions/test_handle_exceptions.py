@@ -54,11 +54,11 @@ def test_handle_exceptions():
 
     assert exception_has_been_handled
 
-    # A try statement may have more than one except clause, to specify handlers for different
-    # exceptions. At most one handler will be executed. Handlers only handle exceptions that occur
-    # in the corresponding try clause, not in other handlers of the same try statement. An except
-    # clause may name multiple exceptions as a parenthesized tuple, for example:
-
+    """A try statement may have more than one except clause, to specify handlers for different
+     exceptions. At most one handler will be executed. Handlers only handle exceptions that occur
+     in the corresponding try clause, not in other handlers of the same try statement. An except
+     clause may name multiple exceptions as a parenthesized tuple, for example:
+    """
     exception_has_been_handled = False
     try:
         result = 10 * (1 / 0)  # division by zero
@@ -85,10 +85,10 @@ def test_handle_exceptions():
 
     assert exception_has_been_handled
 
-    # The try … except statement has an optional else clause, which, when present, must follow all
+    """ The try … except statement has an optional else clause, which, when present, must follow all
     # except clauses. It is useful for code that must be executed if the try clause does not raise
     # an exception. For example:
-
+    """
     exception_has_been_handled = False
     no_exceptions_has_been_fired = False
 
