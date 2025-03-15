@@ -124,10 +124,11 @@ def test_range_function():
 
     assert list(range(5)) == [0, 1, 2, 3, 4]
 
-    # The given end point is never part of the generated sequence; range(10) generates 10 values,
-    # the legal indices for items of a sequence of length 10. It is possible to let the range start
-    # at another number, or to specify a different increment (even negative; sometimes this is
-    # called the ‘step’):
+    """The given end point is never part of the generated sequence; range(10) generates 10 values,
+     the legal indices for items of a sequence of length 10. It is possible to let the range start
+     at another number, or to specify a different increment (even negative; sometimes this is
+     called the 'step'):"
+    """
 
     assert list(range(5, 10)) == [5, 6, 7, 8, 9]
     assert list(range(0, 10, 3)) == [0, 3, 6, 9]

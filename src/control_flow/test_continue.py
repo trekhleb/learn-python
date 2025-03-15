@@ -7,11 +7,12 @@ The continue statement is borrowed from C, continues with the next iteration of 
 
 
 def test_continue_statement():
-    """CONTINUE statement in FOR loop"""
+    """CONTINUE statement in FOR loop
 
     # Let's
 
     # This list will contain only even numbers from the range.
+    """
     even_numbers = []
     # This list will contain every other numbers (in this case - ods).
     rest_of_the_numbers = []

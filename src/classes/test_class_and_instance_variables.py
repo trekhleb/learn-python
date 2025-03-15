@@ -8,9 +8,8 @@ for attributes and methods shared by all instances of the class.
 
 
 def test_class_and_instance_variables():
-    """Class and Instance Variables."""
+    #Class and Instance Variables.
 
-    # pylint: disable=too-few-public-methods
     class Dog:
         """Dog class example"""
         kind = 'canine'  # Class variable shared by all instances.
@@ -31,11 +30,12 @@ def test_class_and_instance_variables():
     # Unique to buddy.
     assert buddy.name == 'Buddy'
 
-    # Shared data can have possibly surprising effects with involving mutable objects such as lists
-    # and dictionaries. For example, the tricks list in the following code should not be used as a
-    # class variable because just a single list would be shared by all Dog instances.
+    """ Shared data can have possibly surprising effects with involving mutable objects such as lists
+     and dictionaries. For example, the tricks list in the following code should not be used as a
+     class variable because just a single list would be shared by all Dog instances.
 
-    # pylint: disable=too-few-public-methods
+     pylint: disable=too-few-public-methods
+    """
     class DogWithSharedTricks:
         """Dog class example with wrong shared variable usage"""
         tricks = []  # Mistaken use of a class variable (see below) for mutable objects.

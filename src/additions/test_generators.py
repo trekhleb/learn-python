@@ -31,7 +31,7 @@ def lottery():
 
 
 def test_generators():
-    """Yield statement"""
+    #Yield statement
     for number_index, random_number in enumerate(lottery()):
         if number_index < 3:
             assert 0 <= random_number <= 10

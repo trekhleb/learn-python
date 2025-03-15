@@ -16,10 +16,11 @@ def power_of(number, power=2):
 
 
 def test_default_function_arguments():
-    """Test default function arguments"""
+    """Test default function arguments
 
     # This function power_of can be called in several ways because it has default value for
     # the second argument. First we may call it omitting the second argument at all.
+    """
     assert power_of(3) == 9
     # We may also want to override the second argument by using the following function calls.
     assert power_of(3, 2) == 9
