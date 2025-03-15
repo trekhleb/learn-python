@@ -21,7 +21,7 @@ def test_try():
 
     try:
         # pylint: disable=undefined-variable
-        print(not_existing_variable)
+        print(not_existing_variable) # type: ignore
     except NameError:
         exception_has_been_caught = True
 
@@ -33,7 +33,7 @@ def test_try():
 
     try:
         # pylint: disable=undefined-variable
-        print(not_existing_variable)
+        print(not_existing_variable) # type: ignore
     except NameError:
         exception_message = 'Variable is not defined'
 
@@ -57,7 +57,7 @@ def test_try():
     message = ''
     try:
         # pylint: undefined-variable
-        print(not_existing_variable)  # noqa: F821
+        print(not_existing_variable)  # type: ignore # noqa: F821
     except NameError:
         message += 'Something went wrong.'
     finally:

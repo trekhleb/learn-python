@@ -8,10 +8,10 @@ Therefore, the user needs the opportunity to be able to put in information.
 
 
 def user_input():
-	"""Input prompt"""
+	""" prompt the user to enter their name and greets them"""
 
-	# Printing statement to signal the user that we are waiting for input.
-	user_input = input("Please type in your name\n")
+	# Prompt the user to enter their name
+	user_name = input("Please type in your name\n")
 
-	# Printing a message based on the input.
-	print(f"Welcome, {user_input}!")
+	# Printing a greeting message
+	print(f"Welcome, {user_name}!")

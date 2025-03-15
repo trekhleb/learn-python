@@ -7,7 +7,7 @@ The break statement, like in C, breaks out of the innermost enclosing "for" or "
 
 
 def test_break_statement():
-    """BREAK statement"""
+    """test how BREAK statements work"""
 
     # Let's terminate the loop in case if we've found the number we need in a range from 0 to 100.
     number_to_be_found = 42

@@ -12,7 +12,7 @@ order that they appear in the sequence. For example (no pun intended):
 
 # pylint: disable=too-many-locals
 def test_for_statement():
-    """FOR statement"""
+    """test how FOR statement work"""
 
     # Measure some strings:
     words = ['cat', 'window', 'defenestrate']
