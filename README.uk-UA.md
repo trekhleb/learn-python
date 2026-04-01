@@ -61,8 +61,8 @@ def test_list_type():
 ## Зміст
 
 1. **Початок роботи**
-    - [Що таке Python](src/getting_started/what_is_python.md)
-    - [Синтаксис Python](src/getting_started/python_syntax.md)
+    - [Що таке Python](src/getting_started/what_is_python.uk-UA.md)
+    - [Синтаксис Python](src/getting_started/python_syntax.uk-UA.md)
     - [Змінні](src/getting_started/test_variables.py)
 2. **Оператори**
     - [Арифметичні оператори](src/operators/test_arithmetic.py) (`+`, `-`, `*`, `/`, `//`, `%`, `**`)
