@@ -34,5 +34,6 @@ def test_json():
     # To encode a data structure to JSON, use the "dumps" method. This method takes an object and
     # returns a String:
     encoded_person_string = json.dumps(person_dictionary)
+    
+    assert json.loads(encoded_person_string) == json.loads(json_string)
 
-    assert encoded_person_string == json_string

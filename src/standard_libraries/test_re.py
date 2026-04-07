@@ -9,8 +9,9 @@ For complex matching and manipulation, regular expressions offer succinct, optim
 import re
 
 
-def test_re():
-    """String Pattern Matching"""
+def test_regex_and_string_operations():
+
+    """Tests regular expressions for pattern matching, substitution, and string replacements."""
 
     assert re.findall(r'\bf[a-z]*', 'which foot or hand fell fastest') == [
         'foot',
@@ -20,6 +21,5 @@ def test_re():
 
     assert re.sub(r'(\b[a-z]+) \1', r'\1', 'cat in the the hat') == 'cat in the hat'
 
-    # When only simple capabilities are needed, string methods are preferred because they are
-    # easier to read and debug:
+    # When only simple capabilities are needed, string methods are preferred because they are easier to read and debug:
     assert 'tea for too'.replace('too', 'two') == 'tea for two'
