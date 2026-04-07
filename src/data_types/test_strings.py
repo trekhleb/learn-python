@@ -43,7 +43,7 @@ def test_string_type():
     # start from -1.
     word = 'Python'
     assert word[0] == 'P'  # First character.
-    assert word[5] == 'n'  # Fifth character.
+    assert word[5] == 'n'  # Sixth character.
     assert word[-1] == 'n'  # Last character.
     assert word[-2] == 'o'  # Second-last character.
     assert word[-6] == 'P'  # Sixth from the end or zeroth from the beginning.
