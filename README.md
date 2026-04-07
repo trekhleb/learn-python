@@ -10,6 +10,7 @@
 <hr/>
 
 [![Build Status](https://travis-ci.org/trekhleb/learn-python.svg?branch=master)](https://travis-ci.org/trekhleb/learn-python)
+[![Open in Codeanywhere](https://img.shields.io/badge/Open%20in-Codeanywhere-7f3f97)](https://app.codeanywhere.com/#https://github.com/trekhleb/learn-python)
 
 > This is a collection of Python scripts that are split by [topics](#table-of-contents) and contain 
 code examples with explanations, different use cases and links to further readings.
