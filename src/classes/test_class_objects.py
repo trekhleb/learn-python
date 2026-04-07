@@ -13,12 +13,12 @@ def test_class_objects():
     Class objects support two kinds of operations:
     - attribute references
     - instantiation.
+    
+     ATTRIBUTE REFERENCES use the standard syntax used for all attribute references in
+     Python: obj.name. Valid attribute names are all the names that were in the class’s namespace
+     when the class object was created. For class MyCounter the following references are valid
+     attribute references:
     """
-
-    # ATTRIBUTE REFERENCES use the standard syntax used for all attribute references in
-    # Python: obj.name. Valid attribute names are all the names that were in the class’s namespace
-    # when the class object was created. For class MyCounter the following references are valid
-    # attribute references:
 
     class ComplexNumber:
         """Example of the complex numbers class"""

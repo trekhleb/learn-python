@@ -11,13 +11,15 @@ the implementation by providing much more expressive features and syntax for tha
 
 
 def test_function_decorators():
-    """Function Decorators."""
+    """Function Decorators.
 
     # Function decorators are simply wrappers to existing functions. Putting the ideas mentioned
     # above together, we can build a decorator. In this example let's consider a function that
     # wraps the string output of another function by p tags.
 
     # This is the function that we want to decorate.
+    """
+
     def greeting(name):
         return "Hello, {0}!".format(name)
 
@@ -32,12 +34,14 @@ def test_function_decorators():
 
     # Here we go, we've just decorated the function output without changing the function itself.
     assert my_get_text('John') == '<p>Hello, John!</p>'  # With decorator.
-    assert greeting('John') == 'Hello, John!'  # Without decorator.
+    assert greeting('John') == 'Hello, John!'  
+    """ Without decorator.
 
     # Now, Python makes creating and using decorators a bit cleaner and nicer for the programmer
     # through some syntactic sugar  There is a neat shortcut for that, which is to mention the
     # name of the decorating function before the function to be decorated. The name of the
     # decorator should be prepended with an @ symbol.
+    """
 
     @decorate_with_p
     def greeting_with_p(name):
@@ -65,17 +69,17 @@ def test_function_decorators():
 
     assert greeting_with_div_p('John') == '<div><p>Hello, John!</p></div>'
 
-    # One important thing to notice here is that the order of setting our decorators matters.
-    # If the order was different in the example above, the output would have been different.
+    """ One important thing to notice here is that the order of setting our decorators matters.
+     If the order was different in the example above, the output would have been different.
 
-    # Passing arguments to decorators.
+     Passing arguments to decorators.
 
-    # Looking back at the example before, you can notice how redundant the decorators in the
-    # example are. 2 decorators(decorate_with_div, decorate_with_p) each with the same
-    # functionality but wrapping the string with different tags. We can definitely do much better
-    # than that. Why not have a more general implementation for one that takes the tag to wrap
-    # with as a string? Yes please!
-
+     Looking back at the example before, you can notice how redundant the decorators in the
+     example are. 2 decorators(decorate_with_div, decorate_with_p) each with the same
+     functionality but wrapping the string with different tags. We can definitely do much better
+     than that. Why not have a more general implementation for one that takes the tag to wrap
+     with as a string? Yes please!
+    """
     def tags(tag_name):
         def tags_decorator(func):
             def func_wrapper(name):
