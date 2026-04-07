@@ -9,7 +9,7 @@ including its primitive types.
 Casting in python is therefore done using constructor functions:
 
 - int() - constructs an integer number from an integer literal, a float literal (by rounding down
-to the previous whole number) literal, or a string literal (providing the string represents a
+to the previous whole number), or a string literal (providing the string represents a
 whole number)
 
 - float() - constructs a float number from an integer literal, a float literal or a string literal
