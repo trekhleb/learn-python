@@ -17,7 +17,7 @@ def test_class_objects():
 
     # ATTRIBUTE REFERENCES use the standard syntax used for all attribute references in
     # Python: obj.name. Valid attribute names are all the names that were in the class’s namespace
-    # when the class object was created. For class MyCounter the following references are valid
+    # when the class object was created. For class ComplexNumber the following references are valid
     # attribute references:
 
     class ComplexNumber:
@@ -52,9 +52,9 @@ def test_class_objects():
     assert complex_number.real == 10
     assert complex_number.get_real() == 10
 
-    # Let's change counter default value back.
-    ComplexNumber.real = 10
-    assert ComplexNumber.real == 10
+    # Let's change complex number default value back.
+    ComplexNumber.real = 0
+    assert ComplexNumber.real == 0
 
     # The instantiation operation (“calling” a class object) creates an empty object. Many classes
     # like to create objects with instances customized to a specific initial state. Therefore a
